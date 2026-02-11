@@ -81,7 +81,7 @@ export const players = [
     name: "Player 1",
     number: 1,
     position: "QB",
-    image: "/images/img_1.jpg",
+    image: "/images/player-qb.png",
     videoUrl: "https://vimeo.com/139714818"
   },
   {
@@ -89,7 +89,7 @@ export const players = [
     name: "Player 2",
     number: 2,
     position: "WR",
-    image: "/images/img_2.jpg",
+    image: "/images/player-wr.png",
     videoUrl: "https://vimeo.com/139714818"
   },
   {
@@ -97,7 +97,7 @@ export const players = [
     name: "Player 3",
     number: 3,
     position: "CB",
-    image: "/images/img_3.jpg",
+    image: "/images/player-cb.png",
     videoUrl: "https://vimeo.com/139714818"
   },
   {
@@ -105,7 +105,7 @@ export const players = [
     name: "Player 4",
     number: 4,
     position: "R",
-    image: "/images/img_1.jpg",
+    image: "/images/player-r.png",
     videoUrl: "https://vimeo.com/139714818"
   },
   {
@@ -113,7 +113,7 @@ export const players = [
     name: "Player 5",
     number: 5,
     position: "RB",
-    image: "/images/img_2.jpg",
+    image: "/images/player-rb.png",
     videoUrl: "https://vimeo.com/139714818"
   },
   {
@@ -121,7 +121,7 @@ export const players = [
     name: "Player 6",
     number: 6,
     position: "S",
-    image: "/images/img_3.jpg",
+    image: "/images/player-s.png",
     videoUrl: "https://vimeo.com/139714818"
   }
 ];

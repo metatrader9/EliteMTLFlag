@@ -33,23 +33,55 @@ function Players() {
           </div>
           <div className="row">
             <div className="col-lg-3 col-md-6 mb-4">
-              <div className="tier-box-image">
+              <div className="tier-box-image tier-elite-box">
+                <span className="starlight starlight-1"></span>
+                <span className="starlight starlight-2"></span>
+                <span className="starlight starlight-3"></span>
+                <span className="starlight starlight-4"></span>
                 <img src="/images/tier-elite.png" alt="Elite Players" />
+                <div className="tier-label tier-label-elite">
+                  <span className="tier-icon">👑</span>
+                  <span className="tier-name">ELITE</span>
+                </div>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 mb-4">
-              <div className="tier-box-image">
+              <div className="tier-box-image tier-gold-box">
+                <span className="starlight starlight-1"></span>
+                <span className="starlight starlight-2"></span>
+                <span className="starlight starlight-3"></span>
+                <span className="starlight starlight-4"></span>
                 <img src="/images/tier-gold.png" alt="Gold Players" />
+                <div className="tier-label tier-label-gold">
+                  <span className="tier-icon">⭐</span>
+                  <span className="tier-name">GOLD</span>
+                </div>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 mb-4">
-              <div className="tier-box-image">
+              <div className="tier-box-image tier-silver-box">
+                <span className="starlight starlight-1"></span>
+                <span className="starlight starlight-2"></span>
+                <span className="starlight starlight-3"></span>
+                <span className="starlight starlight-4"></span>
                 <img src="/images/tier-silver.png" alt="Silver Players" />
+                <div className="tier-label tier-label-silver">
+                  <span className="tier-icon">🥈</span>
+                  <span className="tier-name">SILVER</span>
+                </div>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 mb-4">
-              <div className="tier-box-image">
+              <div className="tier-box-image tier-bronze-box">
+                <span className="starlight starlight-1"></span>
+                <span className="starlight starlight-2"></span>
+                <span className="starlight starlight-3"></span>
+                <span className="starlight starlight-4"></span>
                 <img src="/images/tier-bronze.png" alt="Bronze Players" />
+                <div className="tier-label tier-label-bronze">
+                  <span className="tier-icon">🥉</span>
+                  <span className="tier-name">BRONZE</span>
+                </div>
               </div>
             </div>
           </div>
