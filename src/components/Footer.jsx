@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 
 function Footer() {
   const currentYear = new Date().getFullYear()
@@ -60,11 +60,7 @@ function Footer() {
           <div className="col-lg-12">
             <div className="pt-5">
               <p>
-                Copyright © {currentYear} All rights reserved | This template is made with{' '}
-                <span className="icon-heart" aria-hidden="true"></span> by{' '}
-                <a href="https://colorlib.com" target="_blank" rel="noopener noreferrer">
-                  Colorlib
-                </a>
+                Copyright  {currentYear} All rights reserved by Elite Flag MTL
               </p>
             </div>
           </div>

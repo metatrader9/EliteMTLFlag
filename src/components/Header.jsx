@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 function Header() {
@@ -9,7 +9,7 @@ function Header() {
     { path: '/', label: 'Home' },
     { path: '/matches', label: 'Games' },
     { path: '/players', label: 'Players' },
-    { path: '/blog', label: 'Rankings' },
+    { path: '/about', label: 'About' },
     { path: '/contact', label: 'Contact' }
   ]
 

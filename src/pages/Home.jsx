@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
 import TeamVs from '../components/TeamVs'
 import Countdown from '../components/Countdown'
@@ -15,9 +15,26 @@ function Home() {
   const latestNews = blogPosts.slice(0, 3)
   const latestBlogs = blogPosts.slice(0, 2)
 
+  const sponsors = [
+    {
+      id: 1,
+      image: '/images/LSSprinters.png',
+      name: 'LuxSprintersMTL',
+      description: 'Official transportation partner. Championship teams ride in style.',
+      imageStyle: { background: 'white', padding: '15px', borderRadius: '12px' }
+    },
+    {
+      id: 2,
+      image: '/images/VSlogo.png',
+      name: 'Vision Sécurité Inc.',
+      description: 'Official security partner. Ensuring safe, professional events.',
+      imageStyle: {}
+    }
+  ]
+
   return (
     <>
-      <Hero 
+      <Hero
         title="Play Hard. Run Fast. Flag Faster."
         subtitle="Season 1 begins May 18th 2026"
         backgroundImage="/images/hero-bg.png"
@@ -128,17 +145,54 @@ function Home() {
         </div>
       </div>
 
-      {/* Rankings */}
+      {/* Our Sponsors */}
       <div className="container site-section">
         <div className="row">
-          <div className="col-lg-6 title-section">
-            <h2 className="heading">Rankings</h2>
+          <div className="col-lg-12 title-section">
+            <h2 className="heading">Our Sponsors</h2>
           </div>
         </div>
-        <div className="row">
-          {latestBlogs.map((post) => (
-            <div key={post.id} className="col-lg-6">
-              <BlogCard post={post} layout="horizontal" />
+        <div className="row justify-content-center">
+          {sponsors.map((sponsor) => (
+            <div key={sponsor.id} className="col-lg-5 col-md-6 mb-4">
+              <div 
+                style={{
+                  background: 'linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%)',
+                  borderRadius: '20px',
+                  padding: '40px',
+                  height: '100%',
+                  textAlign: 'center',
+                  border: '2px solid #222',
+                  transition: 'all 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = '#dc3545'
+                  e.currentTarget.style.boxShadow = '0 20px 60px rgba(220, 53, 69, 0.15)'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = '#222'
+                  e.currentTarget.style.boxShadow = 'none'
+                }}
+              >
+                <div style={{ marginBottom: '25px', minHeight: '100px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <img 
+                    src={sponsor.image} 
+                    alt={sponsor.name}
+                    style={{ 
+                      maxWidth: '200px', 
+                      maxHeight: '100px', 
+                      objectFit: 'contain',
+                      ...sponsor.imageStyle
+                    }}
+                  />
+                </div>
+                <h3 style={{ color: '#fff', fontSize: '22px', fontWeight: 'bold', marginBottom: '12px' }}>
+                  {sponsor.name}
+                </h3>
+                <p style={{ color: '#888', fontSize: '15px', margin: 0 }}>
+                  {sponsor.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
